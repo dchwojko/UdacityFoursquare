@@ -63,7 +63,7 @@ class FavoritesTableViewController: UITableViewController {
                 print("There was a problem fetching favorites list")
             }
             do {
-                try self.stack.mainContext.save()
+                try self.stack.save()
             } catch {
                 print("There was a proble saving.")
             }
@@ -176,7 +176,7 @@ class FavoritesTableViewController: UITableViewController {
                 print("There was a problem fetching favorites list")
             }
             do {
-                try self.stack.mainContext.save()
+                try self.stack.save()
             } catch {
                 print("There was a proble saving.")
             }

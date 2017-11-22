@@ -128,7 +128,7 @@ class DetailViewController: UIViewController {
                     favoriteList.addToVenues(self.venue)
 
                     print("There are now \(searchResults[0].venues?.count) venues in the Favorites list")
-                    try stack.mainContext.save()
+                    try stack.save()
                     print("Added venue to favorite list.")
                 } else {
                     print("Favorites list does not exist!")
@@ -162,7 +162,7 @@ class DetailViewController: UIViewController {
             
             do {
                 print("Saving")
-                try stack.mainContext.save()
+                try stack.save()
             } catch {
                 print("There was a problem saving Favorites list!")
             }

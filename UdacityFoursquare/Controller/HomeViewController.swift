@@ -115,7 +115,7 @@ class HomeViewController: UIViewController {
             
             print("Favorites list created")
             do {
-                try self.stack.mainContext.save()
+                try stack.save()
                 print("List saved.")
             } catch {
                 print("There was a problem saving!")
